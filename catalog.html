@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>Седона каталог</title>
+</head>
+
+<body>
+  <!-- шапка-->
+  <header class="header_inner">
+
+    <!--  логотип  -->
+    <a>
+      <img src="" width="#" height="#" alt="Логотип Седона">
+    </a>
+    <!--/  логотип  -->
+
+    <!--  основное меню  -->
+    <nav class="navigation">
+      <ul class="navigation_list">
+        <li class="navigation_item">
+          <a class="navigation_link" href="#">Главная</a>
+        </li>
+        <li class="navigation_item">
+          <a class="navigation_link" href="#">О Седоне</a>
+        </li>
+        <li class="navigation_item">
+          <a class="navigation_link_current" href="#">Гостиницы</a>
+        </li>
+      </ul>
+    </nav>
+    <!--/  основное меню  -->
+
+    <!--  клиентское меню  -->
+    <nav class="user_navigation">
+      <ul class="navigation_list">
+        <li class="navigation_item">
+          <a class="navigation_link" href="#">
+            <span class="visually-hidden">Поиск</span>
+          </a>
+        </li>
+        <li class="navigation_item">
+          <a class="navigation_link" href="#">
+            <span class="visually-hidden">Избранное</span>
+            <span class="favorites">12</span>
+          </a>
+        </li>
+        <li class="navigation_item">
+          <a class="navigation_link" href="#">
+            <span class="visually-hidden">Хочу сюда!</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <!--/  клиентское меню  -->
+
+  </header>
+  <!--шапка-->
+
+  <!--основной контент-->
+  <main class="main_inner">
+
+    <!--  шапка основного контента  -->
+    <header class="inner_header">
+      <h1>Гостиницы Седоны</h1>
+      <ul class="road_at_home">
+        <li class="road_at_home_item">
+          <a class="road_at_home_link" href="index.html">Главная</a>
+        </li>
+        <li class="road_at_home_item">
+          <a class="road_at_home_link">Каталог</a>
+        </li>
+      </ul>
+    </header>
+    <!--/  шапка основного контента  -->
+
+    <!-- выбор гостиницы-->
+    <section class="filter">
+      <form class="filter_hotel" action="" method="">
+        <!--  инфрасктруктура  -->
+        <fieldset class="infrastructure">
+          <legend class="infrastructure_title">Инфраструктура</legend>
+          <ul class="infrastructure_item">
+            <li class="infrastructure_item">
+              <label class="infrastructure_link">
+                <input class="infrastructure_input" type="checkbox" name="Бассейн" checked>
+                Бассейн
+              </label>
+            </li>
+            <li class="infrastructure_item">
+              <label class="infrastructure_link">
+                <input class="infrastructure_input" type="checkbox" name="Парковка" checked>
+                Парковка
+              </label>
+            </li>
+            <li class="infrastructure_item">
+              <label class="infrastructure_link">
+                <input class="infrastructure_input" type="checkbox" name="Wi-Fi">
+                Wi-Fi
+              </label>
+            </li>
+          </ul>
+        </fieldset>
+        <!--/  инфрасктруктура  -->
+
+        <!--  тип жилья  -->
+        <fieldset class="infrastructure">
+          <legend class="infrastructure_title">Тип жилья</legend>
+          <ul class="infrastructure_item">
+            <li class="infrastructure_item">
+              <label class="infrastructure_link">
+                <input class="infrastructure_input" type="radio" name="Гостиница" checked>
+                Гостиница
+              </label>
+            </li>
+            <li class="infrastructure_item">
+              <label class="infrastructure_link">
+                <input class="infrastructure_input" type="radio" name="Мотель">
+                Мотель
+              </label>
+            </li>
+            <li class="infrastructure_item">
+              <label class="infrastructure_link">
+                <input class="infrastructure_input" type="radio" name="Апартаменты">
+                Апартаменты
+              </label>
+            </li>
+          </ul>
+        </fieldset>
+        <!--/  тип жилья  -->
+
+        <!--  кнопки  -->
+        <button class="button" type="submit">Применить</button>
+        <button class="button" type="submit">Сбросить</button>
+        <!--/  кнопки  -->
+      </form>
+    </section>
+    <!-- выбор гостиницы-->
+
+  </main>
+  <!--/основной контент-->
+
+  <!--подвал-->
+  <footer>
+    <section class="footer_inner">
+
+      <!-- подписка  -->
+      <section class="subscribe">
+        <img src="" alt="фон с изображением гор">
+        <section class="subscribe_form">
+          <h2>Подпишитесь на рассылку</h2>
+          <p>Только полезная информация и никакого спама, честное бойскаутское!</p>
+          <label for="form">
+            <input type="вашe-mail">
+            <button>Подписаться</button>
+          </label>
+        </section>
+      </section>
+      <!--/  подписка  -->
+
+      <!-- соцсети -->
+      <ul class="social_icons">
+        <li>
+          <a href="https://vk.com/htmlacademy" class="vk"></a>
+        </li>
+        <li>
+          <a href="https://t.me/htmlacademy" class="telegram"></a>
+        </li>
+        <li>
+          <a href="https://www.youtube.com/user/htmlacademyru" class="youtube"></a>
+        </li>
+      </ul>
+      <!--/ соцсети -->
+
+      <!-- контактный телефон -->
+      <span class="telephone">
+        <a href=”tel:+78128121212”>+7 (812) 812-12-12</a>
+      </span>
+      <!--/ контактный телефон -->
+
+      <!-- логотип академии -->
+      <span>
+        <a href="https://htmlacademy.ru/"><img src="" alt="логотип html-academy"></a>
+      </span>
+      <!--/ логотип академии -->
+
+    </section>
+  </footer>
+  <!--/подвал-->
+</body>
+
+</html>
