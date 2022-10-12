@@ -7,7 +7,7 @@
 </head>
 
 <body>
-  <!-- шапка-->
+  <!--шапка-->
   <header class="header_inner">
 
     <!--  логотип  -->
@@ -62,7 +62,7 @@
   <main class="main_inner">
 
     <!--  шапка основного контента  -->
-    <header class="inner_header">
+    <header class="header_main_inner">
       <h1>Гостиницы Седоны</h1>
       <ul class="road_at_home">
         <li class="road_at_home_item">
@@ -75,7 +75,7 @@
     </header>
     <!--/  шапка основного контента  -->
 
-    <!-- выбор гостиницы-->
+    <!--  выбор гостиницы  -->
     <section class="filter">
       <form class="filter_hotel" action="" method="">
         <!--  инфрасктруктура  -->
@@ -110,19 +110,19 @@
           <ul class="infrastructure_item">
             <li class="infrastructure_item">
               <label class="infrastructure_link">
-                <input class="infrastructure_input" type="radio" name="Гостиница" checked>
+                <input class="infrastructure_input" type="radio" name="infrastructure_group" checked>
                 Гостиница
               </label>
             </li>
             <li class="infrastructure_item">
               <label class="infrastructure_link">
-                <input class="infrastructure_input" type="radio" name="Мотель">
+                <input class="infrastructure_input" type="radio" name="infrastructure_group">
                 Мотель
               </label>
             </li>
             <li class="infrastructure_item">
               <label class="infrastructure_link">
-                <input class="infrastructure_input" type="radio" name="Апартаменты">
+                <input class="infrastructure_input" type="radio" name="infrastructure_group">
                 Апартаменты
               </label>
             </li>
@@ -136,7 +136,135 @@
         <!--/  кнопки  -->
       </form>
     </section>
-    <!-- выбор гостиницы-->
+    <!--  выбор гостиницы  -->
+
+    <!--  каталог  -->
+    <section class="catalog">
+      <h2>Найдено гостиниц: 38</h2>
+      <select class="select-control" aria-label="выбор гостиницы по приоритету">
+        <option value="cheap">Сначала дешёвое</option>
+      </select>
+
+      <!--  ссылки-кнопки  -->
+      <a class="button_selected" href="">
+        <span class="visually-hidden">Обычные значки</span>
+      </a>
+      <a class="button" href="">
+        <span class="visually-hidden">Карточки</span>
+      </a>
+      <a class="button" href="">
+        <span class="visually-hidden">Содержимое</span>
+      </a>
+      <!--/  ссылки кнопок  -->
+
+      <!--  выбор отеля  -->
+      <ul class="hotel_menu">
+
+        <!--  карточка отеля  -->
+        <li class="hotel-card">
+          <a class="hotel-card-link" href="">
+            <img class="hotel-card-image" src="" alt="">
+            <h3 class="hotel-card-title">Amara Resort & Spa</h3>
+          </a>
+          <p>Гостиница</p>
+          <p>От 4000 ₽</p>
+          <a class="hotel-card-button button" href="#">Подробнее</a>
+          <a class="hotel-card-button button" href="#">В Избранное</a>
+          <section class="hotel_raiting">
+            <img src="" alt="star">
+            <img src="" alt="star">
+            <img src="" alt="star">
+            <img src="" alt="star">
+            <a class="button" href="#">Рейтинг: 8,5</a>
+          </section>
+        </li>
+        <!--/  карточка отеля  -->
+
+        <!--  карточка отеля  -->
+        <li class="hotel-card">
+          <a class="hotel-card-link" href="">
+            <img class="hotel-card-image" src="" alt="">
+            <h3 class="hotel-card-title">Villas at Poco Diablo</h3>
+          </a>
+          <p>Гостиница</p>
+          <p>От 5000 ₽</p>
+          <a class="hotel-card-button button" href="#">Подробнее</a>
+          <a class="hotel-card-button button" href="#">В Избранное</a>
+          <section class="hotel_raiting">
+            <img src="" alt="star">
+            <img src="" alt="star">
+            <img src="" alt="star">
+            <img src="" alt="star">
+            <a class="button" href="#">Рейтинг: 9,2</a>
+          </section>
+        </li>
+        <!--/  карточка отеля  -->
+
+        <!--  карточка отеля  -->
+        <li class="hotel-card">
+          <a class="hotel-card-link" href="">
+            <img class="hotel-card-image" src="" alt="">
+            <h3 class="hotel-card-title">Desert Quail Inn</h3>
+          </a>
+          <p>Гостиница</p>
+          <p>От 2500 ₽</p>
+          <a class="hotel-card-button button" href="#">Подробнее</a>
+          <a class="hotel-card-button button" href="#">В Избранное</a>
+          <section class="hotel_raiting">
+            <img src="" alt="star">
+            <img src="" alt="star">
+            <img src="" alt="star">
+            <a class="button" href="#">Рейтинг: 6,9</a>
+          </section>
+        </li>
+        <!--/  карточка отеля  -->
+
+        <!--  карточка отеля  -->
+        <li class="hotel-card">
+          <a class="hotel-card-link" href="">
+            <img class="hotel-card-image" src="" alt="">
+            <h3 class="hotel-card-title">GreenTree Inn</h3>
+          </a>
+          <p>Гостиница</p>
+          <p>От 1500 ₽</p>
+          <a class="hotel-card-button button" href="#">Подробнее</a>
+          <a class="hotel-card-button button" href="#">В Избранное</a>
+          <section class="hotel_raiting">
+            <img src="" alt="star">
+            <img src="" alt="star">
+            <a class="button" href="#">Рейтинг: 5,0</a>
+          </section>
+        </li>
+        <!--/  карточка отеля  -->
+
+      </ul>
+      <!--/  выбор отеля  -->
+
+      <!--  пагинация  -->
+      <ul class="pagination">
+        <li class="pagination-item">
+          <a class="pagination-link pagination-current">1</a>
+        </li>
+        <li class="pagination-item">
+          <a class="pagination-link pagination">2</a>
+        </li>
+        <li class="pagination-item">
+          <a class="pagination-link pagination">3</a>
+        </li>
+        <li class="pagination-item">
+          <a class="pagination-link pagination">4</a>
+        </li>
+        <li class="pagination-item">
+          <a class="pagination-link pagination-white">...</a>
+        </li>
+        <li class="pagination-item">
+          <a class="pagination-link pagination">10</a>
+        </li>
+      </ul>
+      <!--/  пагинация  -->
+
+    </section>
+    <!--/  каталог  -->
 
   </main>
   <!--/основной контент-->
@@ -147,7 +275,6 @@
 
       <!-- подписка  -->
       <section class="subscribe">
-        <img src="" alt="фон с изображением гор">
         <section class="subscribe_form">
           <h2>Подпишитесь на рассылку</h2>
           <p>Только полезная информация и никакого спама, честное бойскаутское!</p>
