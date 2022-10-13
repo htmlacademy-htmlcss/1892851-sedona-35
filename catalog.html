@@ -26,7 +26,7 @@
           <a class="navigation_link" href="#">О Седоне</a>
         </li>
         <li class="navigation_item">
-          <a class="navigation_link_current" href="#">Гостиницы</a>
+          <a class="navigation_link navigation_link_current" href="#">Гостиницы</a>
         </li>
       </ul>
     </nav>
@@ -84,13 +84,13 @@
           <ul class="infrastructure_item">
             <li class="infrastructure_item">
               <label class="infrastructure_link">
-                <input class="infrastructure_input" type="checkbox" name="Бассейн" checked>
+                <input class="infrastructure_input" type="checkbox" name="swimming_pool" checked>
                 Бассейн
               </label>
             </li>
             <li class="infrastructure_item">
               <label class="infrastructure_link">
-                <input class="infrastructure_input" type="checkbox" name="Парковка" checked>
+                <input class="infrastructure_input" type="checkbox" name="parking" checked>
                 Парковка
               </label>
             </li>
@@ -110,19 +110,19 @@
           <ul class="infrastructure_item">
             <li class="infrastructure_item">
               <label class="infrastructure_link">
-                <input class="infrastructure_input" type="radio" name="infrastructure_group" checked>
+                <input class="infrastructure_input" type="radio" name="infrastructure_group" value="hotel" checked>
                 Гостиница
               </label>
             </li>
             <li class="infrastructure_item">
               <label class="infrastructure_link">
-                <input class="infrastructure_input" type="radio" name="infrastructure_group">
+                <input class="infrastructure_input" type="radio" name="infrastructure_group" value="motel">
                 Мотель
               </label>
             </li>
             <li class="infrastructure_item">
               <label class="infrastructure_link">
-                <input class="infrastructure_input" type="radio" name="infrastructure_group">
+                <input class="infrastructure_input" type="radio" name="infrastructure_group" value="apartments">
                 Апартаменты
               </label>
             </li>
@@ -132,7 +132,7 @@
 
         <!--  кнопки  -->
         <button class="button" type="submit">Применить</button>
-        <button class="button" type="submit">Сбросить</button>
+        <button class="button" type="reset">Сбросить</button>
         <!--/  кнопки  -->
       </form>
     </section>
@@ -171,11 +171,8 @@
           <a class="hotel-card-button button" href="#">Подробнее</a>
           <a class="hotel-card-button button" href="#">В Избранное</a>
           <section class="hotel_raiting">
-            <img src="" alt="star">
-            <img src="" alt="star">
-            <img src="" alt="star">
-            <img src="" alt="star">
-            <a class="button" href="#">Рейтинг: 8,5</a>
+            <img src="" alt="4 звезды">
+            <p>Рейтинг: 8,5</p>
           </section>
         </li>
         <!--/  карточка отеля  -->
@@ -191,11 +188,8 @@
           <a class="hotel-card-button button" href="#">Подробнее</a>
           <a class="hotel-card-button button" href="#">В Избранное</a>
           <section class="hotel_raiting">
-            <img src="" alt="star">
-            <img src="" alt="star">
-            <img src="" alt="star">
-            <img src="" alt="star">
-            <a class="button" href="#">Рейтинг: 9,2</a>
+            <img src="" alt="4 звезды">
+            <p>Рейтинг: 9,2</p>
           </section>
         </li>
         <!--/  карточка отеля  -->
@@ -211,10 +205,8 @@
           <a class="hotel-card-button button" href="#">Подробнее</a>
           <a class="hotel-card-button button" href="#">В Избранное</a>
           <section class="hotel_raiting">
-            <img src="" alt="star">
-            <img src="" alt="star">
-            <img src="" alt="star">
-            <a class="button" href="#">Рейтинг: 6,9</a>
+            <img src="" alt="3 звезды">
+            <p>Рейтинг: 6,9</p>
           </section>
         </li>
         <!--/  карточка отеля  -->
@@ -230,9 +222,8 @@
           <a class="hotel-card-button button" href="#">Подробнее</a>
           <a class="hotel-card-button button" href="#">В Избранное</a>
           <section class="hotel_raiting">
-            <img src="" alt="star">
-            <img src="" alt="star">
-            <a class="button" href="#">Рейтинг: 5,0</a>
+            <img src="" alt="2 звезды">
+            <p>Рейтинг: 5,0</p>
           </section>
         </li>
         <!--/  карточка отеля  -->
@@ -275,27 +266,23 @@
 
       <!-- подписка  -->
       <section class="subscribe">
-        <section class="subscribe_form">
-          <h2>Подпишитесь на рассылку</h2>
-          <p>Только полезная информация и никакого спама, честное бойскаутское!</p>
-          <label for="form">
-            <input type="вашe-mail">
-            <button>Подписаться</button>
-          </label>
-        </section>
+        <h2>Подпишитесь на рассылку</h2>
+        <p>Только полезная информация и никакого спама, честное бойскаутское!</p>
+        <input type="вашe-mail">
+        <button>Подписаться</button>
       </section>
       <!--/  подписка  -->
 
       <!-- соцсети -->
       <ul class="social_icons">
         <li>
-          <a href="https://vk.com/htmlacademy" class="vk"></a>
+          <a href="https://vk.com/htmlacademy" class="vk" area-label="иконка вконтакте"></a>
         </li>
         <li>
-          <a href="https://t.me/htmlacademy" class="telegram"></a>
+          <a href="https://t.me/htmlacademy" class="telegram" area-label="иконка телеграм"></a>
         </li>
         <li>
-          <a href="https://www.youtube.com/user/htmlacademyru" class="youtube"></a>
+          <a href="https://www.youtube.com/user/htmlacademyru" class="youtube" area-label="иконка ютуб"></a>
         </li>
       </ul>
       <!--/ соцсети -->
