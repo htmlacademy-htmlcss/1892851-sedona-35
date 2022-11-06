@@ -70,3 +70,6 @@ span {
   Line-height: 24px;
 }
 
+.main_banner {
+  background-image: url(../img/index_img/index_hero_sedona.jpg);
+}
