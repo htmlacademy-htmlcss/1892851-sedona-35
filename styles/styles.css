@@ -1,0 +1,32 @@
+/*подключение шрифтов c сервера или с машины пользователя*/
+@font-face {
+  /*название шрифта*/
+  font-family: "PT Sans";
+  /*стилизация шрифта normal(обычный шрифт), italic(курсивный шрифт), или oblique(смоделированный из обычного курсиный шрифт методом наклона)*/
+  font-style: normal;
+  /*начертание шрифта https://developer.mozilla.org/ru/docs/Web/CSS/font-weight*/
+  font-weight: 400;
+  /*путь к шрифту через корневую папку*/
+  src: url(../fonts/ptsans-400.woff2) format("woff2");
+
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url(../fonts/ptsans-700.woff2) format("woff2");
+  font-display: swap;
+}
+
+body {
+  font-family: "PT Sans", sans-serif;
+  font-size: 18px;
+  Line-height: 21px;
+  color: #000000;
+  background-color: #FFFFFF;
+}
+
+/*pages*/
+
